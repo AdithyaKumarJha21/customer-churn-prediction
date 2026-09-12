@@ -1,40 +1,80 @@
-# Customer Churn Prediction Dashboard
+# 📊 Customer Churn Prediction Dashboard
 
-An interactive Streamlit app that predicts customer churn risk and recommends targeted retention actions. Upload your customer data to identify high-risk accounts, explore churn patterns, and evaluate model performance.
+An interactive Streamlit dashboard that predicts customer churn risk using machine learning and behavioral analytics. Built for customer success teams to identify high-risk accounts before they leave, understand churn drivers, and execute data-driven retention strategies.
 
-## Features
+## ✨ Key Features
 
-- **Predict churn probability** for individual customers with risk labels (Low/Medium/High)
-- **Explore churn trends** by contract type, tenure, billing method, and support activity
-- **Model insights** including accuracy, ROC AUC, confusion matrix, and feature importance
-- **Work with your data** — use synthetic data or upload a CSV file
-- **Retention recommendations** based on customer behavior patterns
-- **Export results** — download high-risk customers as CSV
+- **🎯 Predict Individual Customer Churn** — Input customer tenure, contract type, billing, usage, and support data to get churn probability and actionable risk labels (Low/Medium/High)
+- **🤖 Train Custom ML Models** — Upload your own customer dataset or use synthetic data; the app trains a Random Forest classifier with 78/22 validation split
+- **📈 Analyze Churn Patterns** — Explore interactive dashboards showing churn rates by contract type, tenure, billing method, monthly charges, and support engagement
+- **📊 Model Performance Metrics** — View ROC AUC, confusion matrix, feature importance rankings, and accuracy scores to validate model quality
+- **💡 Smart Retention Recommendations** — Get context-specific retention actions based on each customer's risk profile and behavioral patterns
+- **📥 Export High-Risk Customers** — Download validation results as CSV for immediate outreach and retention campaigns
 
-## Tech Stack
+## 🛠️ Tech Stack
 
-Python · Streamlit · Scikit-learn · Pandas · NumPy · Plotly
+| Component | Technology |
+|-----------|-----------|
+| **Backend & ML** | Python 3.10+, Scikit-learn (Random Forest), Pandas, NumPy, Joblib |
+| **Frontend** | Streamlit |
+| **Visualization** | Plotly |
+| **Version Control** | Git/GitHub |
 
-## Installation
+## 📦 Installation & Setup
 
-Clone the repository and install dependencies:
+### Prerequisites
+- Python 3.10 or newer
+- Git
 
-```bash
+### Step-by-Step Setup
+
+**On Windows (PowerShell):**
+```powershell
 git clone https://github.com/AdithyaKumarJha21/customer-churn-prediction.git
 cd customer-churn-prediction
 
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 
+python -m pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-## Quick Start
+**On macOS/Linux:**
+```bash
+git clone https://github.com/AdithyaKumarJha21/customer-churn-prediction.git
+cd customer-churn-prediction
 
-Run the dashboard:
+python3 -m venv .venv
+source .venv/bin/activate
+
+pip install --upgrade pip
+pip install -r requirements.txt
+```
+
+## 🚀 Quick Start
+
+Start the Streamlit app:
 
 ```bash
 streamlit run app.py
 ```
 
-Open `http://localhost:8501` in your browser. Use the default synthetic dataset or upload a CSV with these columns:
+Open your browser to `http://localhost:8501`
+
+**First time using it:**
+1. The app loads with synthetic data (1,000-10,000 configurable records)
+2. Browse the **Overview** tab to see churn distribution
+3. Check **Segments** tab for churn trends by customer attributes
+4. Go to **Model** tab to review validation metrics and feature importance
+5. Use **Predict** tab to enter a single customer profile and click "Predict Churn Risk"
+6. Export high-risk customers from the Model tab
+
+**Upload Your Own Data:**
+
+Create a CSV with these required columns:
+
+
+The `Churn` column must contain `Yes` or `No`. Upload from the sidebar—the model will retrain on your data.
+
+## 📁 Project Structure
