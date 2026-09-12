@@ -4,12 +4,12 @@ An interactive Streamlit dashboard that predicts customer churn risk using machi
 
 ## ✨ Key Features
 
-- ** Predict Individual Customer Churn** — Input customer tenure, contract type, billing, usage, and support data to get churn probability and actionable risk labels (Low/Medium/High)
-- ** Train Custom ML Models** — Upload your own customer dataset or use synthetic data; the app trains a Random Forest classifier with 78/22 validation split
-- ** Analyze Churn Patterns** — Explore interactive dashboards showing churn rates by contract type, tenure, billing method, monthly charges, and support engagement
-- ** Model Performance Metrics** — View ROC AUC, confusion matrix, feature importance rankings, and accuracy scores to validate model quality
-- ** Smart Retention Recommendations** — Get context-specific retention actions based on each customer's risk profile and behavioral patterns
-- ** Export High-Risk Customers** — Download validation results as CSV for immediate outreach and retention campaigns
+- **Predict Individual Customer Churn** — Input customer tenure, contract type, billing, usage, and support data to get churn probability and actionable risk labels (Low/Medium/High)
+- **Train Custom ML Models** — Upload your own customer dataset or use synthetic data; the app trains a Random Forest classifier with 78/22 validation split
+- **Analyze Churn Patterns** — Explore interactive dashboards showing churn rates by contract type, tenure, billing method, monthly charges, and support engagement
+- **Model Performance Metrics** — View ROC AUC, confusion matrix, feature importance rankings, and accuracy scores to validate model quality
+- **Smart Retention Recommendations** — Get context-specific retention actions based on each customer's risk profile and behavioral patterns
+- **Export High-Risk Customers** — Download validation results as CSV for immediate outreach and retention campaigns
 
 ## 🛠️ Tech Stack
 
