@@ -78,12 +78,12 @@ Create a CSV with these required columns:
 The `Churn` column must contain `Yes` or `No`. Upload from the sidebar—the model will retrain on your data.
 
 ## 📁 Project Structure
+
+```
 customer-churn-prediction/
-├── app.py # Main Streamlit application
-│ # Handles data generation, model training,
-│ # predictions, dashboards, and CSV uploads
-├── requirements.txt # Python dependencies
-├── churn_model.joblib # Trained model pipeline (auto-generated,
-│ # git-ignored)
-├── .gitignore # Excludes venv, cache, and artifacts
-└── README.md # This file
+├── app.py
+├── requirements.txt
+├── churn_model.joblib
+├── .gitignore
+└── README.md
+```
