@@ -1,47 +1,53 @@
 # Customer Churn Prediction Dashboard
 
-An interactive Streamlit dashboard that trains a Random Forest classifier on customer records, highlights churn risk drivers, and predicts the churn risk of an individual customer.
+An interactive machine learning dashboard that helps businesses identify customers at risk of churning, understand the factors driving that risk, and take proactive retention action.
+
+The application combines customer data preparation, Random Forest classification, model evaluation, interactive visualizations, and real-time customer scoring in one Streamlit interface.
 
 ## Problem Statement
 
-Acquiring new customers is significantly more expensive than retaining existing ones.
+Customer acquisition is significantly more expensive than customer retention. However, businesses often discover that a customer is likely to leave only after churn has already occurred.
 
-Businesses need a way to identify customers who are likely to leave before churn occurs.
+This project addresses that challenge by analyzing customer tenure, contract details, billing behavior, service usage, and support activity to estimate churn probability before the customer leaves.
 
-This project helps organizations detect high-risk customers, understand churn drivers, and take proactive retention actions.
+The resulting dashboard enables teams to prioritize high-risk customers, explore churn patterns, and select targeted retention actions.
 
 ## Features
 
-- Synthetic customer data generation
-- CSV dataset upload support
-- Missing value handling
-- Feature engineering
-- Random Forest churn prediction
-- Threshold optimization
-- Risk segmentation
-- Feature importance analysis
-- Interactive visualizations
-- Individual customer prediction
-- Retention recommendations
-- High-risk customer export
+### Data Preparation
+
+- Generate a realistic synthetic customer dataset with more than 5,000 records.
+- Upload a customer CSV dataset with a `Churn` target column.
+- Handle missing numeric and categorical values.
+- Create predictive features such as contract risk, monthly spend, and new-customer status.
+
+### Machine Learning
+
+- Train a balanced Random Forest churn classifier.
+- Preprocess numeric and categorical features with a Scikit-learn pipeline.
+- Optimize the classification threshold using validation data.
+- Evaluate accuracy, ROC AUC, classification metrics, and a confusion matrix.
+- Display the features with the greatest influence on model predictions.
+
+### Business Insights
+
+- Segment customers into low-, medium-, and high-risk groups.
+- Explore churn rates by contract type and customer tenure.
+- Predict churn risk for an individual customer in real time.
+- Receive recommended retention actions based on the customer profile.
+- Export high-risk validation customers as a CSV file.
 
 ## Tech Stack
 
-### Programming Language
-
-- Python
-
-### Framework
-
-- Streamlit
-
-### Libraries
-
-- Pandas
-- NumPy
-- Scikit-learn
-- Plotly
-- Joblib
+| Technology | Purpose |
+| --- | --- |
+| Python | Application, data processing, and machine learning development |
+| Streamlit | Interactive dashboard and prediction interface |
+| Pandas | Data loading, cleaning, transformation, and analysis |
+| NumPy | Numerical operations and synthetic data generation |
+| Scikit-learn | Preprocessing pipeline, Random Forest model, and evaluation metrics |
+| Plotly | Interactive charts and model insight visualizations |
+| Joblib | Serialization of the trained machine learning pipeline |
 
 ## Current Default Model Result
 
