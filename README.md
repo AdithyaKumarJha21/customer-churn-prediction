@@ -62,6 +62,13 @@ streamlit run app.py
 
 Open your browser to `http://localhost:8501`
 
+## 📸 Example Output
+![alt text](<Screenshot 2026-09-12 160310.png>)
+
+### Output 2
+
+![alt text](<Screenshot 2026-09-12 160523.png>)
+
 ### First Time Using It
 
 1. The app loads with synthetic data (1,000-10,000 configurable records)
