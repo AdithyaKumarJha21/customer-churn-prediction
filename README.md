@@ -62,7 +62,8 @@ streamlit run app.py
 
 Open your browser to `http://localhost:8501`
 
-**First time using it:**
+### First Time Using It
+
 1. The app loads with synthetic data (1,000-10,000 configurable records)
 2. Browse the **Overview** tab to see churn distribution
 3. Check **Segments** tab for churn trends by customer attributes
@@ -70,16 +71,26 @@ Open your browser to `http://localhost:8501`
 5. Use **Predict** tab to enter a single customer profile and click "Predict Churn Risk"
 6. Export high-risk customers from the Model tab
 
-**Upload Your Own Data:**
+### Upload Your Own Data
 
 Create a CSV with these required columns:
 
-tenure_months, contract_type, internet_service, payment_method,
-paperless_billing, senior_citizen, monthly_charges, total_charges,
-support_tickets, avg_monthly_usage_gb, late_payments, Churn
+| Column | Description |
+|--------|-------------|
+| `tenure_months` | Customer tenure in months |
+| `contract_type` | Type of contract |
+| `internet_service` | Service type |
+| `payment_method` | Payment method |
+| `paperless_billing` | Yes/No |
+| `senior_citizen` | Yes/No |
+| `monthly_charges` | Monthly bill amount |
+| `total_charges` | Total lifetime charges |
+| `support_tickets` | Number of support tickets |
+| `avg_monthly_usage_gb` | Average monthly data usage |
+| `late_payments` | Number of late payments |
+| `Churn` | **Yes/No** (required label) |
 
-
-The `Churn` column must contain `Yes` or `No`. Upload from the sidebar—the model will retrain on your data.
+Upload from the sidebar—the model will retrain on your data.
 
 ## 📁 Project Structure
 
