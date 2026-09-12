@@ -74,6 +74,10 @@ Open your browser to `http://localhost:8501`
 
 Create a CSV with these required columns:
 
+tenure_months, contract_type, internet_service, payment_method,
+paperless_billing, senior_citizen, monthly_charges, total_charges,
+support_tickets, avg_monthly_usage_gb, late_payments, Churn
+
 
 The `Churn` column must contain `Yes` or `No`. Upload from the sidebar—the model will retrain on your data.
 
